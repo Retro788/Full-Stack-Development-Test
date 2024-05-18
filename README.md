@@ -28,7 +28,7 @@ Ensure PHP version 8.1 or newer is installed. Node.js version 12.0 or higher is 
         *To create the database, go to your cmd, access mysql and enter your login, enter the command and a sqlite database will be created.*
 6. Migrate the database with `php artisan migrate --seed`
 7. Duplicate .env.example and rename it to .env, then adjust the parameters.
-8. Start the project with `v` and access it at http://localhost:8000
+8. Start the project with `php artisan serve` 
 9. Open a new terminal window and navigate to the project's root directory.
 10. Execute `npm install.`
 11. Launch the Vite server for Laravel frontend with `npm run dev.`
