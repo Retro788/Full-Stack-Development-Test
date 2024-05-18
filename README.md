@@ -27,15 +27,17 @@ Ensure PHP version 8.1 or newer is installed. Node.js version 12.0 or higher is 
 5. Create a database `named: usersystem`
         *To create the database, go to your cmd, access mysql and enter your login, enter the command and a sqlite database will be created.*
 6. Migrate the database with `php artisan migrate --seed`
+  
 7. Duplicate .env.example and rename it to .env, then adjust the parameters.
 8. Start the project with `php artisan serve` 
+        *In the case of you get error of the secretkey (could not create token) use `php artisan jwt:secret` in a new terminal and `JWT secret key set successfully.` and rename ur password in the .env with ur sql password*
 9. Open a new terminal window and navigate to the project's root directory.
 10. Execute `npm install.`
 11. Launch the Vite server for Laravel frontend with `npm run dev.`
 
 
 #### Frontend
-1. Navigate to `frontend` folder using terminal
+1. Navigate to `frontend` folder using terminal *using cd*
 2. Run `npm install` to install vue.js project dependencies
 3. Copy `frontend/.env.example` into `frontend/.env` using `cp .env.example .env` and specify API URL
 4. Start frontend by running `npm run dev`
